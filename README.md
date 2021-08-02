@@ -7,6 +7,8 @@ THIS SCRIPT IS INTENDED FOR USE ON SYSTEMS YOU OWN OR HAVE BEEN GIVEN PERMISSION
 This script uses netcat, make sure it is ready on on of your machines 
 
 _-How to use-_
+
+
 Step 1: in rs.ps1,  change {IP HERE} and {PORT HERE} to your ip and port of choosing (you will have to port forward this to the machine you are listening to)
 
 Step 2: either host the file somewhere youself or upload it to a file hosting website, I use anonfiles. (make sure you get the download link, not the page link)
