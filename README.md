@@ -19,7 +19,7 @@ step 4: encode the payload
 
 step 5: on your machine with netcat, type the following command: Nc -lnvp {PORT YOU ARE FORWADING TO THIS MACHINE}
 
-step 6: if all goes well, the rubber ducky should start a hidden powershell session that you have full, remote control of.
+step 6: if all goes well, the rubber ducky should start a hidden powershell session that you have full, remote control of a powershell session
 
 some notes: this wont work if they have any anti-virus that isn't windows defender, additionally some networks may block the connection, but it will work on normal home networks ect.
 
