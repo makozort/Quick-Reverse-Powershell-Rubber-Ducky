@@ -21,7 +21,6 @@ try {
 	$out_msg = "";
 	$exit = 0;
 	while ($exit -eq 0) {
-		Write-Output "HIT";
 		while ($reader.Peek() -ge 0) {		
 			$in_buff = $reader.ReadLine();
 		}
